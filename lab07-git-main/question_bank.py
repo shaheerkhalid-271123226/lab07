@@ -1,6 +1,6 @@
 #---------------------------------------
 #  Question Bank
-#    Student B
+#    Rameen Zafar
 #---------------------------------------
 
 import random
@@ -161,7 +161,7 @@ def display_question_and_accept_answer(question):
     - str: The player's answer to the question.
     """
     #------------------------
-    answer= (input(question))
+    answer= (input(question.lower()))
     return answer
     #------------------------
 
@@ -185,7 +185,7 @@ def provide_hint(category, question):
         "history": "Consider the major events of that time.",
         "geography": "Focus on the location and its features."
     }
-    return hints.get(category(), "Think carefully about your answer!")
+    return hints.get(category.lower(), "Think carefully about your answer!")
     #------------------------
 
 #---------------------------------------
