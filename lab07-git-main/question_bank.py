@@ -161,7 +161,8 @@ def display_question_and_accept_answer(question):
     - str: The player's answer to the question.
     """
     #------------------------
-
+    answer= (input(question))
+    return answer
     #------------------------
 
 #---------------------------------------
@@ -178,9 +179,13 @@ def provide_hint(category, question):
     - str: The hint for the given question.
     """
     #------------------------
-    # Add your code here
-    #------------------------
-    raise NotImplementedError("This function is not implemented yet.")
+    hints = {
+        "math": "Remember to apply the correct formula.",
+        "science": "Think about the scientific method.",
+        "history": "Consider the major events of that time.",
+        "geography": "Focus on the location and its features."
+    }
+    return hints.get(category(), "Think carefully about your answer!")
     #------------------------
 
 #---------------------------------------
@@ -196,9 +201,7 @@ def display_correct_answer(correct_answer):
     - None
     """
     #------------------------
-    # Add your code here
-    #------------------------
-    raise NotImplementedError("This function is not implemented yet.")
+    print(f"The correct answer is: {correct_answer}")
     #------------------------
 
 #---------------------------------------
