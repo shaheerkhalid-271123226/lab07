@@ -53,7 +53,7 @@ def display_leaderboard(leaderboard):
         print("No scores to display yet.")
     else:
         sorted_leaderboard = sorted(leaderboard.items(), key=list.__getitem__(1), reverse=True)
-        print("\n🏆 Leaderboard 🏆")
+        print("Leaderboard ")
         for name, score in sorted_leaderboard:
             print(f"{name}: {score}")
             #------------------------
@@ -75,7 +75,7 @@ def save_score(player_name, score, file_path='scores.txt'):
     # Add your code here
     #------------------------
     with open(file_path, "a") as f:
-        f.write(f"{player_name},{score}\n")    
+        f.write(f"{player_name},{score}")    
     #------------------------
 
 #---------------------------------------
