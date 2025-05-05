@@ -14,7 +14,7 @@ def welcome_message():
     #------------------------
     # Add your code here
     #------------------------
-    print("Welcome to the Quiz Game! Get ready to test your knowledge")
+    print("Welcome to the Quiz Game! ")
     #------------------------
 #---------------------------------------
     
@@ -72,7 +72,7 @@ def game_over_message(final_score):
     #------------------------
     # Add your code here
     #------------------------
-    print("\n💥 Game Over! Your final score is:", final_score)    
+    print("Game Over! Your final score is:", final_score)    
     #------------------------
 
 #---------------------------------------
@@ -90,7 +90,7 @@ def run_game_rounds(categories):
     # Add your code here
     #------------------------
     for round_number in range(1, 6):
-        print(f"\nStarting Round {round_number}")
+        print(f"Starting Round {round_number}")
         chosen_category = choose_category(categories)
         print(f"You chose: {chosen_category}")    
         #------------------------
